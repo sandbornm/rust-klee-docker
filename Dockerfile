@@ -53,6 +53,8 @@ RUN rustup default 1.51.0
 # Current LLVM version: 11.1.0
 
 RUN git clone https://github.com/klee/klee.git && cd klee && mkdir build && cd build && \
-	cmake .. && make -j 12 && sudo make install
+	cmake .. && make -j 4 && sudo make install
+ENV LD_LIBRARY_PATH $USER_HOME/klee/build/lib/
+
 
 RUN git clone https://gitlab.henriktjader.com/pln/cargo-klee.git && cd cargo-klee && cargo install --path cargo-klee
