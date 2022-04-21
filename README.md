@@ -3,8 +3,6 @@
 
 # RUST-KLEE docker
 
-## Install
-
 build:
 
 ```bash
@@ -18,8 +16,6 @@ docker run --rm -it rkd
 ```
 
 ## How to use 
-
-### Using rustc and klee
 
 you can test klee with `klee-example`:
 
@@ -69,3 +65,11 @@ LLVM: `10.0.0`
 Thanks `henriktjader` for:
 * `cargo klee`: <https://gitlab.henriktjader.com/pln/cargo-klee>
 * `klee_tutorial`: <https://gitlab.henriktjader.com/pln/klee_tutorial>
+
+### Specify your own target
+
+In order to specify your own Rust target for analysis in the Docker environment, it is assumed that the directory (e.g. Github repo) of interest is located on the host. To run with a target, use the following
+
+1. `sudo docker run -it -v "/path/to/target/on/host:/path/to/target/in/container" <container_name>` to start the container with the target directory loaded
+2. todo - add details for isolating target code to be used with cargo klee boilerplate
+
