@@ -24,6 +24,9 @@ enables sudo when constructing the container
 docker run --rm -it rkd
 ```
 
+(you may also need to specify --cap-add=SYS_PTRACE --security-opt seccomp=unconfined in the Docker run command)
+
+
 ## To run an existing cargo klee example 
 
 Go to `klee-example`:
@@ -61,6 +64,11 @@ KLEE: done: generated tests = 3
 1. `sudo docker run -it -v "/path/to/target/on/host:/path/to/target/in/container" <container_name>` to start the container with the target directory loaded
 2. For example, for the folder `container-data` in this repo and the docker image named `rkd`, run `sudo docker run -it -v "~/rust-klee-docker/container-data:~/container-data" rkd`
 3. note that these must be absolute paths (i.e. replace ~ above with the fully qualified path to files)
+
+### To examine ktest files generated after running Cargo Klee in GDB
+
+1. `cargo klee -g -r --bin <directory_of_rs_code>` (-g is for gdb, -r is for replay)
+2. `set 
 
 ### Version
 
