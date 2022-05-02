@@ -1,0 +1,12 @@
+Error: abort failure
+File: /home/ubuntu/.cargo/git/checkouts/panic-klee-aa8d015442188497/3b0c897/src/lib.rs
+Line: 8
+assembly.ll line: 1832
+State: 2
+Stack: 
+	#000001832 in rust_begin_unwind (=94839342605280) at /home/ubuntu/.cargo/git/checkouts/panic-klee-aa8d015442188497/3b0c897/src/lib.rs:8
+	#100001058 in _ZN4core9panicking9panic_fmt17hcd56f7f635f62c74E (=94839343113344, =94839343074976) at library/core/src/panicking.rs:92
+	#200000944 in _ZN4core9panicking5panic17h07405d6be4bce887E (=94839343085808, =33, =94839343074976) at library/core/src/panicking.rs:50
+	#300000739 in _ZN4fact8fact_rec17ha139d49a18ae97a3E (n) at src/main.rs:21
+	#400000766 in _ZN4fact9fact_test17h3b0d301d1e2f7b1fE (n) at src/main.rs:27
+	#500000896 in main () at src/main.rs:34

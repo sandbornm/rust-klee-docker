@@ -1,0 +1,8 @@
+array n[4] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Ult N0:(ReadLSB w32 0 n)
+                  2))
+         (Or (Slt 2147483647
+                  N1:(Add w64 18446744073709551615 (SExt w64 N0)))
+             (Slt N1 18446744071562067968))]
+        false)

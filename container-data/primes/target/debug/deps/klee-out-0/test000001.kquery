@@ -1,0 +1,7 @@
+array n[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 1
+                 N0:(ReadLSB w64 0 n)))
+         (Ult 18446744073709551615
+              (Add w128 340282366920938463463374607431768211455 (ZExt w128 N0)))]
+        false)

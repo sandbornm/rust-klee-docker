@@ -1,0 +1,280 @@
+array n[4] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Ult N0:(ReadLSB w32 0 n)
+                  2))
+         (Eq false
+             (Slt 2147483647
+                  N1:(Add w64 18446744073709551615 (SExt w64 N0))))
+         (Eq false (Slt N1 18446744071562067968))
+         (Eq false
+             (Ult N2:(Extract w32 0 N1) 2))
+         (Eq false
+             (Slt 2147483647
+                  N3:(Add w64 18446744073709551615 (SExt w64 N2))))
+         (Eq false (Slt N3 18446744071562067968))
+         (Eq false
+             (Ult N4:(Extract w32 0 N3) 2))
+         (Eq false
+             (Slt 2147483647
+                  N5:(Add w64 18446744073709551615 (SExt w64 N4))))
+         (Eq false (Slt N5 18446744071562067968))
+         (Eq false
+             (Ult N6:(Extract w32 0 N5) 2))
+         (Eq false
+             (Slt 2147483647
+                  N7:(Add w64 18446744073709551615 (SExt w64 N6))))
+         (Eq false (Slt N7 18446744071562067968))
+         (Eq false
+             (Ult N8:(Extract w32 0 N7) 2))
+         (Eq false
+             (Slt 2147483647
+                  N9:(Add w64 18446744073709551615 (SExt w64 N8))))
+         (Eq false (Slt N9 18446744071562067968))
+         (Eq false
+             (Ult N10:(Extract w32 0 N9) 2))
+         (Eq false
+             (Slt 2147483647
+                  N11:(Add w64 18446744073709551615 (SExt w64 N10))))
+         (Eq false (Slt N11 18446744071562067968))
+         (Eq false
+             (Ult N12:(Extract w32 0 N11) 2))
+         (Eq false
+             (Slt 2147483647
+                  N13:(Add w64 18446744073709551615 (SExt w64 N12))))
+         (Eq false (Slt N13 18446744071562067968))
+         (Eq false
+             (Ult N14:(Extract w32 0 N13) 2))
+         (Eq false
+             (Slt 2147483647
+                  N15:(Add w64 18446744073709551615 (SExt w64 N14))))
+         (Eq false (Slt N15 18446744071562067968))
+         (Eq false
+             (Ult N16:(Extract w32 0 N15) 2))
+         (Eq false
+             (Slt 2147483647
+                  N17:(Add w64 18446744073709551615 (SExt w64 N16))))
+         (Eq false (Slt N17 18446744071562067968))
+         (Eq false
+             (Ult N18:(Extract w32 0 N17) 2))
+         (Eq false
+             (Slt 2147483647
+                  N19:(Add w64 18446744073709551615 (SExt w64 N18))))
+         (Eq false (Slt N19 18446744071562067968))
+         (Eq false
+             (Ult N20:(Extract w32 0 N19) 2))
+         (Eq false
+             (Slt 2147483647
+                  N21:(Add w64 18446744073709551615 (SExt w64 N20))))
+         (Eq false (Slt N21 18446744071562067968))
+         (Eq false
+             (Ult N22:(Extract w32 0 N21) 2))
+         (Eq false
+             (Slt 2147483647
+                  N23:(Add w64 18446744073709551615 (SExt w64 N22))))
+         (Eq false (Slt N23 18446744071562067968))
+         (Eq false
+             (Ult N24:(Extract w32 0 N23) 2))
+         (Eq false
+             (Slt 2147483647
+                  N25:(Add w64 18446744073709551615 (SExt w64 N24))))
+         (Eq false (Slt N25 18446744071562067968))
+         (Eq false
+             (Ult N26:(Extract w32 0 N25) 2))
+         (Eq false
+             (Slt 2147483647
+                  N27:(Add w64 18446744073709551615 (SExt w64 N26))))
+         (Eq false (Slt N27 18446744071562067968))
+         (Eq false
+             (Ult N28:(Extract w32 0 N27) 2))
+         (Eq false
+             (Slt 2147483647
+                  N29:(Add w64 18446744073709551615 (SExt w64 N28))))
+         (Eq false (Slt N29 18446744071562067968))
+         (Eq false
+             (Ult N30:(Extract w32 0 N29) 2))
+         (Eq false
+             (Slt 2147483647
+                  N31:(Add w64 18446744073709551615 (SExt w64 N30))))
+         (Eq false (Slt N31 18446744071562067968))
+         (Eq false
+             (Ult N32:(Extract w32 0 N31) 2))
+         (Eq false
+             (Slt 2147483647
+                  N33:(Add w64 18446744073709551615 (SExt w64 N32))))
+         (Eq false (Slt N33 18446744071562067968))
+         (Eq false
+             (Ult N34:(Extract w32 0 N33) 2))
+         (Eq false
+             (Slt 2147483647
+                  N35:(Add w64 18446744073709551615 (SExt w64 N34))))
+         (Eq false (Slt N35 18446744071562067968))
+         (Eq false
+             (Ult N36:(Extract w32 0 N35) 2))
+         (Eq false
+             (Slt 2147483647
+                  N37:(Add w64 18446744073709551615 (SExt w64 N36))))
+         (Eq false (Slt N37 18446744071562067968))
+         (Eq false
+             (Ult N38:(Extract w32 0 N37) 2))
+         (Eq false
+             (Slt 2147483647
+                  N39:(Add w64 18446744073709551615 (SExt w64 N38))))
+         (Eq false (Slt N39 18446744071562067968))
+         (Eq false
+             (Ult N40:(Extract w32 0 N39) 2))
+         (Eq false
+             (Slt 2147483647
+                  N41:(Add w64 18446744073709551615 (SExt w64 N40))))
+         (Eq false (Slt N41 18446744071562067968))
+         (Eq false
+             (Ult N42:(Extract w32 0 N41) 2))
+         (Eq false
+             (Slt 2147483647
+                  N43:(Add w64 18446744073709551615 (SExt w64 N42))))
+         (Eq false (Slt N43 18446744071562067968))
+         (Eq false
+             (Ult N44:(Extract w32 0 N43) 2))
+         (Eq false
+             (Slt 2147483647
+                  N45:(Add w64 18446744073709551615 (SExt w64 N44))))
+         (Eq false (Slt N45 18446744071562067968))
+         (Eq false
+             (Ult N46:(Extract w32 0 N45) 2))
+         (Eq false
+             (Slt 2147483647
+                  N47:(Add w64 18446744073709551615 (SExt w64 N46))))
+         (Eq false (Slt N47 18446744071562067968))
+         (Eq false
+             (Ult N48:(Extract w32 0 N47) 2))
+         (Eq false
+             (Slt 2147483647
+                  N49:(Add w64 18446744073709551615 (SExt w64 N48))))
+         (Eq false (Slt N49 18446744071562067968))
+         (Eq false
+             (Ult N50:(Extract w32 0 N49) 2))
+         (Eq false
+             (Slt 2147483647
+                  N51:(Add w64 18446744073709551615 (SExt w64 N50))))
+         (Eq false (Slt N51 18446744071562067968))
+         (Eq false
+             (Ult N52:(Extract w32 0 N51) 2))
+         (Eq false
+             (Slt 2147483647
+                  N53:(Add w64 18446744073709551615 (SExt w64 N52))))
+         (Eq false (Slt N53 18446744071562067968))
+         (Eq false
+             (Ult N54:(Extract w32 0 N53) 2))
+         (Eq false
+             (Slt 2147483647
+                  N55:(Add w64 18446744073709551615 (SExt w64 N54))))
+         (Eq false (Slt N55 18446744071562067968))
+         (Eq false
+             (Ult N56:(Extract w32 0 N55) 2))
+         (Eq false
+             (Slt 2147483647
+                  N57:(Add w64 18446744073709551615 (SExt w64 N56))))
+         (Eq false (Slt N57 18446744071562067968))
+         (Eq false
+             (Ult N58:(Extract w32 0 N57) 2))
+         (Eq false
+             (Slt 2147483647
+                  N59:(Add w64 18446744073709551615 (SExt w64 N58))))
+         (Eq false (Slt N59 18446744071562067968))
+         (Eq false
+             (Ult N60:(Extract w32 0 N59) 2))
+         (Eq false
+             (Slt 2147483647
+                  N61:(Add w64 18446744073709551615 (SExt w64 N60))))
+         (Eq false (Slt N61 18446744071562067968))
+         (Eq false
+             (Ult N62:(Extract w32 0 N61) 2))
+         (Eq false
+             (Slt 2147483647
+                  N63:(Add w64 18446744073709551615 (SExt w64 N62))))
+         (Eq false (Slt N63 18446744071562067968))
+         (Eq false
+             (Ult N64:(Extract w32 0 N63) 2))
+         (Eq false
+             (Slt 2147483647
+                  N65:(Add w64 18446744073709551615 (SExt w64 N64))))
+         (Eq false (Slt N65 18446744071562067968))
+         (Eq false
+             (Ult N66:(Extract w32 0 N65) 2))
+         (Eq false
+             (Slt 2147483647
+                  N67:(Add w64 18446744073709551615 (SExt w64 N66))))
+         (Eq false (Slt N67 18446744071562067968))
+         (Eq false
+             (Ult N68:(Extract w32 0 N67) 2))
+         (Eq false
+             (Slt 2147483647
+                  N69:(Add w64 18446744073709551615 (SExt w64 N68))))
+         (Eq false (Slt N69 18446744071562067968))
+         (Eq false
+             (Ult N70:(Extract w32 0 N69) 2))
+         (Eq false
+             (Slt 2147483647
+                  N71:(Add w64 18446744073709551615 (SExt w64 N70))))
+         (Eq false (Slt N71 18446744071562067968))
+         (Eq false
+             (Ult N72:(Extract w32 0 N71) 2))
+         (Eq false
+             (Slt 2147483647
+                  N73:(Add w64 18446744073709551615 (SExt w64 N72))))
+         (Eq false (Slt N73 18446744071562067968))
+         (Eq false
+             (Ult N74:(Extract w32 0 N73) 2))
+         (Eq false
+             (Slt 2147483647
+                  N75:(Add w64 18446744073709551615 (SExt w64 N74))))
+         (Eq false (Slt N75 18446744071562067968))
+         (Eq false
+             (Ult N76:(Extract w32 0 N75) 2))
+         (Eq false
+             (Slt 2147483647
+                  N77:(Add w64 18446744073709551615 (SExt w64 N76))))
+         (Eq false (Slt N77 18446744071562067968))
+         (Eq false
+             (Ult N78:(Extract w32 0 N77) 2))
+         (Eq false
+             (Slt 2147483647
+                  N79:(Add w64 18446744073709551615 (SExt w64 N78))))
+         (Eq false (Slt N79 18446744071562067968))
+         (Eq false
+             (Ult N80:(Extract w32 0 N79) 2))
+         (Eq false
+             (Slt 2147483647
+                  N81:(Add w64 18446744073709551615 (SExt w64 N80))))
+         (Eq false (Slt N81 18446744071562067968))
+         (Eq false
+             (Ult N82:(Extract w32 0 N81) 2))
+         (Eq false
+             (Slt 2147483647
+                  N83:(Add w64 18446744073709551615 (SExt w64 N82))))
+         (Eq false (Slt N83 18446744071562067968))
+         (Eq false
+             (Ult N84:(Extract w32 0 N83) 2))
+         (Eq false
+             (Slt 2147483647
+                  N85:(Add w64 18446744073709551615 (SExt w64 N84))))
+         (Eq false (Slt N85 18446744071562067968))
+         (Eq false
+             (Ult N86:(Extract w32 0 N85) 2))
+         (Eq false
+             (Slt 2147483647
+                  N87:(Add w64 18446744073709551615 (SExt w64 N86))))
+         (Eq false (Slt N87 18446744071562067968))
+         (Eq false
+             (Ult N88:(Extract w32 0 N87) 2))
+         (Eq false
+             (Slt 2147483647
+                  N89:(Add w64 18446744073709551615 (SExt w64 N88))))
+         (Eq false (Slt N89 18446744071562067968))
+         (Eq false
+             (Ult N90:(Extract w32 0 N89) 2))
+         (Eq false
+             (Slt 2147483647
+                  N91:(Add w64 18446744073709551615 (SExt w64 N90))))
+         (Eq false (Slt N91 18446744071562067968))
+         (Ult (Extract w32 0 N91) 2)]
+        false)
