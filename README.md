@@ -68,7 +68,8 @@ KLEE: done: generated tests = 3
 ### To examine ktest files generated after running Cargo Klee in GDB
 
 1. `cargo klee -g -r --bin <directory_of_rs_code>` (-g is for gdb, -r is for replay)
-2. `set 
+2. `set environment KTEST_FILE=klee_last/test000001.ktest` to specify the file to test
+3. in gdb, run `break <name of function to test>` then `run` or `r`
 
 ### Version
 
