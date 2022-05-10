@@ -1,0 +1,23 @@
+klee --disable-verify /home/ubuntu/container-data/primes/target/debug/deps/primes-734ee4e948b4d20b.ll
+PID: 74
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2022-05-03 18:50:36
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2022-05-03 18:52:30
+Elapsed: 00:01:54
+KLEE: done: explored paths = 18
+KLEE: done: avg. constructs per query = 71
+KLEE: done: total queries = 85
+KLEE: done: valid queries = 66
+KLEE: done: invalid queries = 18
+KLEE: done: query cex = 85
+
+KLEE: done: total instructions = 14593
+KLEE: done: completed paths = 8
+KLEE: done: partially completed paths = 10
+KLEE: done: generated tests = 10

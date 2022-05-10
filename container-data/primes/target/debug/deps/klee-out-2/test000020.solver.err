@@ -1,0 +1,9 @@
+Error: Query timed out (fork).
+File: src/main.rs
+Line: 25
+assembly.ll line: 439
+State: 29
+Stack: 
+	#000000439 in _ZN6primes13isprime_check17hee4c830b2cfe391dE (n) at src/main.rs:25
+	#100000477 in _ZN6primes10prime_test17he3eb7209752c09d9E (n) at src/main.rs:34
+	#200000586 in main () at src/main.rs:41

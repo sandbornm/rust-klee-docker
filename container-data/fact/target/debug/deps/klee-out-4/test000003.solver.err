@@ -1,0 +1,11 @@
+Error: Query timed out (fork).
+File: src/main.rs
+Line: 12
+assembly.ll line: 271
+State: 18
+Stack: 
+	#000000271 in _ZN4fact8fact_rec17hdf4d9bb7eb76daaaE (n) at src/main.rs:12
+	#100000261 in _ZN4fact8fact_rec17hdf4d9bb7eb76daaaE (n) at src/main.rs:12
+	#200000261 in _ZN4fact8fact_rec17hdf4d9bb7eb76daaaE (n) at src/main.rs:12
+	#300000413 in _ZN4fact9fact_test17ha2f44ee6e1c3dbacE (n) at src/main.rs:31
+	#400000518 in main () at src/main.rs:38

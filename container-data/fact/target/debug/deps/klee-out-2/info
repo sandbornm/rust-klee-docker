@@ -1,0 +1,23 @@
+klee --disable-verify /home/ubuntu/container-data/fact/target/debug/deps/fact-ccf4edac9aa028c8.ll
+PID: 41
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2022-05-03 18:46:31
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2022-05-03 18:48:28
+Elapsed: 00:01:57
+KLEE: done: explored paths = 350
+KLEE: done: avg. constructs per query = 1412
+KLEE: done: total queries = 2572
+KLEE: done: valid queries = 2218
+KLEE: done: invalid queries = 353
+KLEE: done: query cex = 2572
+
+KLEE: done: total instructions = 76580
+KLEE: done: completed paths = 2
+KLEE: done: partially completed paths = 348
+KLEE: done: generated tests = 12

@@ -1,0 +1,4 @@
+KLEE: Using Z3 solver backend
+KLEE: ERROR: src/main.rs:12: Query timed out (fork).
+KLEE: NOTE: now ignoring this error at this location
+KLEE: halting execution, dumping remaining states

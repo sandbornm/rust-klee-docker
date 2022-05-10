@@ -19,7 +19,7 @@ docker build -t rkd .
 ```
 
 run the container interactively and with tty (i.e. display a shell) note this may require sudo but the Dockerfile
-enables sudo when constructing the container
+enables sudo when constructing the container (`--rm` removes the container after running)
 ```bash
 docker run --rm -it rkd
 ```
@@ -63,7 +63,16 @@ KLEE: done: generated tests = 3
 
 1. `sudo docker run -it -v "/path/to/target/on/host:/path/to/target/in/container" <container_name>` to start the container with the target directory loaded
 2. For example, for the folder `container-data` in this repo and the docker image named `rkd`, run `sudo docker run -it -v "~/rust-klee-docker/container-data:~/container-data" rkd`
-3. note that these must be absolute paths (i.e. replace ~ above with the fully qualified path to files)
+3. Note that these must be absolute paths (i.e. replace ~ above with the fully qualified path to files)
+4. It may also be necessary to specify security configuration options such as `--cap-add=SYS_PTRACE --security-opt seccomp=unconfined`, like so `sudo docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -it -v /host/abspath/to/data:/container/abspath/to/data rkd`
+5. Run Cargo Klee with 
+
+### To run the generated test cases on a specified program
+1. `cargo klee -g -r --bin <source_dir>`(-g for gdb, -r for replay, --bin for the code to compile)
+2. Inside of gdb, run `set environment KTEST_FILE=klee-last/<ktest_name>.ktest` for example "test000001.ktest"
+3. then set a break point at the function to test with `break (or b) <func_name>` e.g. `b fact_test`
+4. run the program to the breakpoint with `run` or `r`
+5. 
 
 ### To examine ktest files generated after running Cargo Klee in GDB
 

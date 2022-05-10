@@ -1,0 +1,5 @@
+KLEE: Using Z3 solver backend
+KLEE: ERROR: /home/ubuntu/.cargo/git/checkouts/panic-klee-aa8d015442188497/3b0c897/src/lib.rs:8: abort failure
+KLEE: NOTE: now ignoring this error at this location
+KLEE: ERROR: src/main.rs:23: Query timed out (fork).
+KLEE: NOTE: now ignoring this error at this location
